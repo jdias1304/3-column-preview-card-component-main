@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    padding: 1.5rem;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sedans {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 3rem 0rem 3rem;
+    line-height: 1.5;
+    background-color: rgb(227, 136, 38);
+    max-width: 320px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.suvs {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 3rem 0rem 3rem;
+    line-height: 1.5;
+    background-color: rgb(0, 105, 112);
+    max-width: 320px;
+}
+
+.luxury {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 3rem 0rem 3rem;
+    line-height: 1.5;
+    background-color: rgb(0, 66, 65);
+    max-width: 320px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.sedans-title, .suvs-title, .luxury-title {
+    text-transform: uppercase;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 2rem
+}
+
+.sedans-info, .suvs-info, .luxury-info {
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.sedans img, .suvs img, .luxury img {
+    margin-bottom: 1rem;
+}
+
+.sedans a {
+    background-color: white;
+    padding: 12px 0px 12px 0px;
+    width: 60%;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(227, 136, 38);
+    font-family: 'Outfit';
+    cursor: pointer;
+}
+
+.suvs a {
+    background-color: white;
+    padding: 12px 0px 12px 0px;
+    width: 60%;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 105, 112);
+    font-family: 'Outfit';
+    cursor: pointer;
+}
+
+.luxury a {
+    background-color: white;
+    padding: 12px 0px 12px 0px;
+    width: 60%;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 66, 65);
+    font-family: 'Outfit';
+    cursor: pointer;
+}
+
+.sedans a:hover {
+    background-color: rgb(227, 136, 38);
+    color: white;
+    outline: 2px solid white;
+    transition: .8s;
+}
+
+.suvs a:hover {
+    background-color: rgb(0, 105, 112);
+    color: white;
+    outline: 2px solid white;
+    transition: .8s;
+}
+
+.luxury a:hover {
+    background-color: rgb(0, 66, 65);
+    color: white;
+    outline: 2px solid white;
+    transition: .8s;
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .sedans, .suvs, .luxury {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0px;
+        row-gap: 0px;
+    }
+
+    .sedans {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .suvs {
+        border-radius: 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
